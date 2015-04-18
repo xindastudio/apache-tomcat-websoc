@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="websocSpeedTest.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+WebSoc Test
+<div id="cons"></div>
+<div id="socTxt"></div>
+<script type="text/javascript">
+/*var worker = new Worker("websocSpeedTest.js");
+worker.onmessage = function (event) {
+	out(event.data);
+}
+worker.onerror = function (event) {
+	out(event.data);
+}
+worker.postMessage("start");*/
+start();
+function out(msg) {
+	var elem = document.getElementById("cons");
+	elem.innerHTML += (msg + "<br/>");
+}
+</script>
+</body>
+</html>
